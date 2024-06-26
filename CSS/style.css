@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand";
+}
+
+header{
+    width: 100%;
+    height: 250px;
+    background: linear-gradient(100deg, rgb(165, 164, 164),rgb(36, 36, 36));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo img{
+    max-height: 200px;
+    width: 250px;
+    margin-left: 2em;
+}
+
+nav, a{
+    text-decoration: none;
+    justify-content: flex-end;
+    color: white;
+    margin-right: 2em;
+}
+nav, a:hover{
+    color: black;
+}
+
+main{
+    background-color: black;
+    height: 100%;
+}
+
+.banner{
+    width: 100%;
+    height: 500px;
+    background-color: white;
+}
+
+.banner img{
+    float: right;
+    width: 900px;
+    height: 500px;
+}
+
+.contenido-banner{
+    text-align: center;
+}
+.contenido-banner h1{
+    margin-top: 2em;
+    font-size: 3.5em;
+}
+.contenido-banner h3{
+    font-size: 20px;
+    margin-top: 1em;
+    color: rgb(36, 36, 219);
+}
+.contenido-banner .boton{
+    margin-top: 2.5em;
+    margin-left: 2em;
+    display: inline-block;
+    border: 1px solid rgb(25, 25, 165);
+    border-radius: 5px;
+    padding: 10px 10px;
+    color: whitesmoke;
+    background-color: rgb(25, 25, 165);
+}
+.contenido-banner .boton:hover{
+    color: rgb(25, 25, 165);
+    background: whitesmoke;
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+.card{
+    width: 325px;
+    background-color: gray;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    margin: 20px;
+    transition: 0.6s ease;
+}
+.card img{
+    width: 100%;
+    height: auto;
+}
+
+.card-content{
+    padding: 16px;
+    cursor: default;
+}
+
+.card-content h3{
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.card-content p{
+    line-height: 1.3;
+    font-size: 15px;
+    color: white;
+}
+
+.card-content .btn{
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: rgb(29, 29, 29);
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 16px;
+    color: whitesmoke;
+}
+.card-content .btn:hover{
+    color: rgb(29, 29, 29);
+    background-color: whitesmoke;
+}
+
+#productos .card{
+    background: linear-gradient(135deg , rgb(86, 86, 238), rgb(15, 15, 80)
+    );
+}
+#productos .card-content{
+    text-align: center;
+    background: linear-gradient(135deg , rgb(86, 86, 238), rgb(15, 15, 80)
+    );
+}
+
+#productos .card .card-content{
+    transform: translateY(10px);
+    transition: 0.5s all;
+}
+#productos .card:hover{
+    transform: translateY(-20px);
+}
+#productos .card:hover .card-content{
+    transform: translateY(0px);
+}
+
+#productos .btn{
+    background-color: grey;
+}
+
+#productos .btn:hover{
+    color: rgb(94, 94, 94);
+    background-color: whitesmoke;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+
+#productos h2{
+    color: whitesmoke;
+    margin-top: 5em;
+    font-size: 3em;
+    text-align: center;
+}
+
+#productos h3, h4{
+    color: whitesmoke;
+}
+
+#productos .card-content h4{
+    margin-bottom: 8px;
+}
+
+#productos p{
+    color: rgb(194, 194, 194);
+}
+
+.btn-juegos .boton-juegos{
+    margin-top: 5em;
+    display: inline-block;
+    margin-left: 35em;
+    border: 1px solid rgb(11, 11, 65);
+    border-radius: 5px;
+    padding: 10px 10px;
+    color: whitesmoke;
+    background-color: rgb(11, 11, 65);
+}
+
+.btn-juegos .boton-juegos:hover{
+    color: whitesmoke;
+    background: rgb(146, 146, 146);
+    transition: all 0.4s ease;
+    font-weight: bold;
+}
+
+.publicidades{
+    margin-top: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#staff .card{
+    background-color: rgb(216, 213, 210);;
+}
+
+#staff .card-content{
+    text-align: center;
+    background-color: rgb(216, 213, 210);
+}
+
+#staff h2{
+    color: whitesmoke;
+    font-size: 3em;
+    margin-top: 3em;
+    text-align: center;
+}
+
+#staff h4{
+    color: black;
+}
+#staff .card:hover{
+    transform: translateY(-20px);
+}
+
+.publicidad3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5em;
+}
+
+#noticias h2{
+    color: whitesmoke;
+    font-size: 3em;
+    margin-top: 3em;
+    text-align: center;
+}
+
+#noticias .btn:hover{
+    transition: all 0.6s ease;
+    font-weight: bold ;
+}
+
+.registro-box{
+    height: 950px;
+}
+
+.registro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-registro{
+    width: 750px;
+    height: 600px;
+    margin-top: 10em;
+    background-color: rgb(214, 212, 212);
+    border-radius: 5px;
+    padding: 25px 30px;
+}
+.posicion-registro .input-box input:focus, .posicion-registro .input-box input:valid{
+    border-color: rgb(99, 99, 99);
+}
+.container-registro .título{
+    font-size: 25px;
+    font-weight: 500px;
+    position: relative;
+    margin-bottom: 1em;
+}
+
+.container-registro form .posicion-registro{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.posicion-registro .input-box input{
+    height: 45px;
+    width: 100%;
+    margin-top: 1em;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgb(219, 219, 219);
+    padding-left: 15px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+.posicion-registro .input-box input{
+    font-weight: 300px;
+    margin-bottom: 2px;
+
+}
+
+.posicion-registro .input-box input{
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+form .posicion-registro .input-box{
+    margin: 20px 0 12px 0;
+}
+
+form .generos .título-generos{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+form .generos .elegir{
+    justify-content: space-around;
+    display: flex;
+    margin: 14px;
+    width: 80%;
+    background-color: rgb(214, 212, 212);
+}
+
+.generos .elegir label{
+    display: flex;
+    align-items: center;
+}
+
+.elegir, .select1, .select2{
+    height: 18px;
+    width: 18px;
+    background: grey;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+}
+
+#select1:checked ~ .elegir label .select1, #select2:checked ~ .elegir label .select2{
+    border-color: grey;
+    background-color: whitesmoke;
+}
+
+.generos input[type="radio"]{
+    display: none;
+}
+
+form .boton-registro{
+    height: 45px;
+    margin: 45px 0;
+}
+
+form .boton-registro input{
+    height: 100%;
+    width: 100%;
+    color: white;
+    outline: none;
+    background: linear-gradient(135deg , rgb(86, 86, 238), rgb(15, 15, 80)
+    );
+    font-size: 18px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+.juegos{
+    height: 1200px;
+    background-color: rgb(224, 220, 220);
+}
+.juegos h2{
+    text-align: center;
+    padding-top: 2em;
+    font-size: 2em;
+    color: rgb(88, 88, 88);
+
+}
+.container-table{
+    width: 100%;
+    height: 950px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+    margin-top: 5em;
+}
+.content-table{
+    border-collapse: collapse;
+    width: 70%;
+    height: 100%;
+    font-size: 0.9em;
+    border-radius: 10px 10px 10px 10px;
+    overflow: hidden;
+    background-color: rgb(169, 169, 177);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.40);
+}
+
+.content-table thead tr{
+    background-color: rgb(136, 135, 135);
+    text-align: center;
+    font-weight: bold;
+}
+.content-table thead tr th{
+    color: whitesmoke;
+}
+.content-table th{
+    color: rgb(77, 76, 76);
+}
+.content-table th, .container-table td{
+    padding: 12px 15px;
+}
+
+.container-table tbody tr{
+    border-bottom: 2px solid rgb(253, 253, 253);
+}
+.container-table tbody tr:nth-of-type(even){
+    background-color: rgb(192, 190, 190);
+}
+footer{
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(100deg, rgb(165, 164, 164),rgb(36, 36, 36));
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+footer .logo2 img{
+    max-height: 150px;
+    width: 200px;
+}
+footer h3{
+    color: whitesmoke;
+}
+
+footer p{
+    color: whitesmoke;
+}
+footer i{
+    font-size: 30px;
+}
